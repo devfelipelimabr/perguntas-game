@@ -45,163 +45,376 @@
 
                 <form class="questionForm" action="">
                     <p id="question1">
-                        O protocolo UDP apresenta um cabeçalho extremamente simples utilizado precipuamente por
-                        aplicações como DNS, SNMP e TFTP. Acerca das características do protocolo UDP, marque a
-                        alternativa correta:</p>
+
+                        Considere o seguinte programa escrito em C. Lembre-se que o operador % significa resto da
+                        divisão inteira.
+                        <br>
+                        <code>
+                            #include <br>
+                            void main(){ <br>
+                            int num;<br>
+                            printf("Entre com um inteiro:\n");<br>
+                            scanf("%d", &num);<br>
+                            num = num + num%3;<br>
+                            printf("num = %d \n", num);<br>
+                            }
+                        </code>
+                    </p>
                     <input type="radio" id="a" name="a" value="a">
-                    <label for="a">Não realiza a verificação dos dados recebidos.</label><br>
+                    <label for="a">
+                        num = 7</label><br>
                     <input type="radio" id="b" name="a" value="b">
-                    <label for="b">Responsável pela ordenação dos bits na camada física.</label><br>
+                    <label for="b">num = 5</label><br>
                     <input type="radio" id="c" name="a" value="c">
                     <label for="c">
-                        Não estabelece conexões para troca de dados.</label><br>
+                        num = 2</label><br>
                     <input type="radio" id="d" name="a" value="d">
-                    <label for="d">Realiza retransmissões para garantir a entrega de dados.</label><br>
+                    <label for="d">num = 8</label><br>
                     <input type="radio" id="e" name="a" value="e">
-                    <label for="e">Trata-se de um protocolo de nível de enlace.</label><br>
+                    <label for="e">num = 6</label><br>
                 </form>
             </div>
             <div class="question">
                 <h2>Questão 2</h2>
 
                 <form class="questionForm" action="">
-                    <p id="question2"></p>
+                    <p id="question2">Observe o trecho do código em C a seguir. Não esqueça que o operador % significa
+                        resto da divisão inteira.
+                        <br>
+                        <code>
+                            #include <br>
+                            void main(){ <br>
+                            int n, i; <br>
+                            i = 20; <br>
+                            n = 2*(i%3); <br>
+                            printf("n = %d", n); <br>
+                            }
+                        </code>
+                    </p>
                     <input type="radio" id="a" name="a" value="a">
-                    <label for="a"></label><br>
+                    <label for="a">
+                        n = 12</label><br>
                     <input type="radio" id="b" name="a" value="b">
-                    <label for="b"></label><br>
+                    <label for="b">
+                        n = 3</label><br>
                     <input type="radio" id="c" name="a" value="c">
-                    <label for="c"></label><br>
+                    <label for="c">
+                        n = 3</label><br>
                     <input type="radio" id="d" name="a" value="d">
-                    <label for="d"></label><br>
+                    <label for="d">
+                        n = 1</label><br>
                     <input type="radio" id="e" name="a" value="e">
-                    <label for="e"></label><br>
+                    <label for="e">
+                        n = 4</label><br>
                 </form>
             </div>
             <div class="question">
                 <h2>Questão 3</h2>
 
                 <form class="questionForm" action="">
-                    <p id="question3"></p>
+                    <p id="question3">
+                        Marque a opção que apresente o comando que é usado em uma estrutura do tipo switch-case para
+                        evitar que as opções incorretas não sejam utilizada, caso uma determinada opção seja
+                        selecionada.</p>
                     <input type="radio" id="a" name="a" value="a">
-                    <label for="a"></label><br>
+                    <label for="a">done</label><br>
                     <input type="radio" id="b" name="a" value="b">
-                    <label for="b"></label><br>
+                    <label for="b">break</label><br>
                     <input type="radio" id="c" name="a" value="c">
-                    <label for="c"></label><br>
+                    <label for="c">else</label><br>
                     <input type="radio" id="d" name="a" value="d">
-                    <label for="d"></label><br>
+                    <label for="d">continue</label><br>
                     <input type="radio" id="e" name="a" value="e">
-                    <label for="e"></label><br>
+                    <label for="e">default</label><br>
                 </form>
             </div>
             <div class="question">
                 <h2>Questão 4</h2>
 
                 <form class="questionForm" action="">
-                    <p id="question4"></p>
+                    <p id="question4"><code>
+                        #include
+                            int main(void){<br>
+                        
+                            int i;<br>
+                        
+                            printf("F = ");<br>
+                        
+                            scanf("%d",&i);<br>
+                        
+                        <br>
+                        
+                            switch (i)br
+                        
+                            {<br>
+                        
+                            case 0 : printf("Maca");<br>
+                        
+                            break;<br>
+                        
+                            case 10 : printf("Abacate");<br>
+                        
+                            break;<br>
+                        
+                            case 20 : printf("Banana");<br>
+                        
+                            break;<br>
+                        
+                            case 30 : printf("Pera");<br>
+                        
+                            break;<br>
+                        
+                            case 40 : printf("Uva");<br>
+                        
+                            break;<br>
+                        
+                            default : printf("Caju");<br>
+                        
+                            } <br>
+                        
+                            } <br>
+                    </code>
+                        <br>
+                        Considerando o código em linguagem C apresentado acima, assinale a opção correta.
+                    </p>
                     <input type="radio" id="a" name="a" value="a">
-                    <label for="a"></label><br>
+                    <label for="a">A função scanf trabalha com um argumento de entrada, dado pelo endereço da variável a
+                        ser lida.</label><br>
                     <input type="radio" id="b" name="a" value="b">
-                    <label for="b"></label><br>
+                    <label for="b">A função principal foi especificada para aceitar um argumento de entrada do tipo
+                        inteiro.</label><br>
                     <input type="radio" id="c" name="a" value="c">
-                    <label for="c"></label><br>
+                    <label for="c">O termo stdio.h especifica um arquivo de biblioteca dinâmica de funções.</label><br>
                     <input type="radio" id="d" name="a" value="d">
-                    <label for="d"></label><br>
+                    <label for="d">O termo printf especifica uma diretiva de compilação.</label><br>
                     <input type="radio" id="e" name="a" value="e">
-                    <label for="e"></label><br>
+                    <label for="e">A instrução switch é utilizada como um laço de repetição com número definido de
+                        iterações.</label><br>
                 </form>
             </div>
             <div class="question">
                 <h2>Questão 5</h2>
 
                 <form class="questionForm" action="">
-                    <p id="question5"></p>
+                    <p id="question5">Assinale a alternativa que corresponde ao enunciado: <br>
+                        Faça um programa que leia vinte números inteiros e positivos e mostre o menor número.</p>
                     <input type="radio" id="a" name="a" value="a">
-                    <label for="a"></label><br>
+                    <label for="a"><code>
+                        controle=1;<br>
+                            for (cont=1;cont<=20;cont++) <br>
+                            {  scanf ("%d",&num);<br>
+                               if (controle==1)<br>
+                                 menor=num;<br>
+                               else<br>
+                                  if (num<br>
+                                     menor=num;<br>
+                               controle++;<br>
+                             }<br>
+                    </code></label><br>
                     <input type="radio" id="b" name="a" value="b">
-                    <label for="b"></label><br>
+                    <label for="b"><code>
+                        controle=0;<br>
+                            for (cont=1;cont<=20;cont++)<br>
+                            {  scanf ("%d",&num);<br>
+                               if (controle==1)<br>
+                                 menor=num;<br>
+                               else<br>
+                                  if (num<br>
+                                     menor=num;<br>
+                               controle++;<br>
+                             }
+                    </code></label><br>
                     <input type="radio" id="c" name="a" value="c">
-                    <label for="c"></label><br>
+                    <label for="c"><code>
+                        controle=1;<br>
+                            while (cont<=20)<br>
+                            {  scanf ("%d",&num);<br>
+                               if (controle==1)<br>
+                                 menor=num;<br>
+                               else<br>
+                                  if (num<br>
+                                     menor=num;<br>
+                               controle++;<br>
+                             }<br>
+                    </code></label><br>
                     <input type="radio" id="d" name="a" value="d">
-                    <label for="d"></label><br>
+                    <label for="d"><code>
+                        controle=1;<br>
+                            for (cont=1;cont<=10)<br>
+                            {  scanf ("%d",&num);<br>
+                               if (controle==1)<br>
+                                 menor=num;<br>
+                               else<br>
+                                  if (num<br>
+                                     menor=num;<br>
+                               controle++;<br>
+                            }<br>
+                    </code></label><br>
                     <input type="radio" id="e" name="a" value="e">
-                    <label for="e"></label><br>
+                    <label for="e">
+                        <code>
+                            controle=1;<br>
+                            
+                                   for (cont=1;cont<=20;cont++)<br>
+                            
+                                   {  scanf ("%d",&num);<br>
+                            
+                                      if (controle==1)<br>
+                            
+                                        menor=num;<br>
+                            
+                                      else<br>
+                            
+                                         if (num<br>
+                            
+                                            menor=num;<br>
+                            
+                                    }<br>
+                        </code></label><br>
                 </form>
             </div>
             <div class="question">
                 <h2>Questão 6</h2>
 
                 <form class="questionForm" action="">
-                    <p id="question6"></p>
+                    <p id="question6">
+                        Na codificação de um programa, na linguagem C, é necessária a declaração de uma matriz
+                        bidimensional para armazenar as notas de 6 disciplinas de uma turma com 30 alunos.
+                        <br><br>
+                        O algoritmo considera que os dados estarão organizados na matriz, de modo que cada linha
+                        represente as notas de um único aluno.
+                        <br><br>
+                        Marque a alternativa que apresenta, de forma correta, a declaração dessa matriz, chamada de notasAlunos:</p>
                     <input type="radio" id="a" name="a" value="a">
-                    <label for="a"></label><br>
+                    <label for="a">	
+                        float notas [30,6];</label><br>
                     <input type="radio" id="b" name="a" value="b">
-                    <label for="b"></label><br>
+                    <label for="b">float notas [6][30];</label><br>
                     <input type="radio" id="c" name="a" value="c">
-                    <label for="c"></label><br>
+                    <label for="c">float notas [6,30];</label><br>
                     <input type="radio" id="d" name="a" value="d">
-                    <label for="d"></label><br>
+                    <label for="d">float notas [30|6];</label><br>
                     <input type="radio" id="e" name="a" value="e">
-                    <label for="e"></label><br>
+                    <label for="e">float notas [30][6];</label><br>
                 </form>
             </div>
             <div class="question">
                 <h2>Questão 7</h2>
 
                 <form class="questionForm" action="">
-                    <p id="question7"></p>
+                    <p id="question7">Observe a sequência a seguir: <br>
+
+                        A <br>
+                        
+                        BB <br>
+                        
+                        CCC <br>
+                        
+                        DDDD <br>
+                        
+                        O próximo termo é:</p>
                     <input type="radio" id="a" name="a" value="a">
-                    <label for="a"></label><br>
+                    <label for="a">	
+                        ABCBA</label><br>
                     <input type="radio" id="b" name="a" value="b">
-                    <label for="b"></label><br>
+                    <label for="b">EEEEE</label><br>
                     <input type="radio" id="c" name="a" value="c">
-                    <label for="c"></label><br>
+                    <label for="c">DEEEEED</label><br>
                     <input type="radio" id="d" name="a" value="d">
-                    <label for="d"></label><br>
+                    <label for="d">EDCBA</label><br>
                     <input type="radio" id="e" name="a" value="e">
-                    <label for="e"></label><br>
+                    <label for="e">ABCDE</label><br>
                 </form>
             </div>
             <div class="question">
                 <h2>Questão 8</h2>
 
                 <form class="questionForm" action="">
-                    <p id="question8"></p>
+                    <p id="question8">Para verificar o resto da divisão de um número inteiro por outro, utiliza-se no Portugol o operador %. <br>
+                        <br>
+                        Por exemplo: <br>
+                        
+                        5%2 tem como resultado 1. <br>
+                        
+                        14%3 tem como resultado 2. <br>
+                        
+                        12%6 tem como resultado 0. <br>
+                        
+                         <br>
+                        
+                        Observe a figura, a seguir, com um pequeno programa em Portugol: <br>
+                    <img src="images/quest-8.JPG" alt=""><br>
+                    Assinale a alternativa que poderia conter a saída no console de uma execução válida deste programa:</p>
                     <input type="radio" id="a" name="a" value="a">
-                    <label for="a"></label><br>
+                    <label for="a">Digite um número: 25 <br>
+
+                        leia(numero) <br>
+                        
+                        O número 25 é multiplo de 5</label><br>
                     <input type="radio" id="b" name="a" value="b">
-                    <label for="b"></label><br>
+                    <label for="b">Digite um número: 21 <br>
+
+                        O número 21 não é multiplo de5\n</label><br>
                     <input type="radio" id="c" name="a" value="c">
-                    <label for="c"></label><br>
+                    <label for="c">Digite um número: 21 <br>
+
+                        O número 21 não é multiplo de 5</label><br>
                     <input type="radio" id="d" name="a" value="d">
-                    <label for="d"></label><br>
+                    <label for="d">Digite um número: 25 <br>
+
+                        O número 25 não é multiplo de 5</label><br>
                     <input type="radio" id="e" name="a" value="e">
-                    <label for="e"></label><br>
+                    <label for="e">	
+                        Digite um número: 25 <br>
+                        
+                        O número numero é multiplo de 5</label><br>
                 </form>
             </div>
             <div class="question">
                 <h2>Questão 9</h2>
 
                 <form class="questionForm" action="">
-                    <p id="question9"></p>
+                    <p id="question9">
+                        Considere as três afirmações a seguir: <br>
+                        
+                        I - Recursividade é uma forma de repetição. <br>
+                        
+                        II - Variáveis são uma abstração de locais de memória do computador. <br>
+                        
+                        III - Operações aritméticas e lógicas só́ podem ser realizadas entre operandos do mesmo tipo. <br>
+                        
+                        <br>
+                        Está(ão) correta(s): <br>
+                        
+                        </p>
                     <input type="radio" id="a" name="a" value="a">
-                    <label for="a"></label><br>
+                    <label for="a">I e II</label><br>
                     <input type="radio" id="b" name="a" value="b">
-                    <label for="b"></label><br>
+                    <label for="b">II e III</label><br>
                     <input type="radio" id="c" name="a" value="c">
-                    <label for="c"></label><br>
+                    <label for="c">	
+                        Apenas I</label><br>
                     <input type="radio" id="d" name="a" value="d">
-                    <label for="d"></label><br>
+                    <label for="d">	
+                        I, II e III</label><br>
                     <input type="radio" id="e" name="a" value="e">
-                    <label for="e"></label><br>
+                    <label for="e">	
+                        Apenas II</label><br>
                 </form>
             </div>
             <div class="question">
                 <h2>Questão 10</h2>
 
                 <form class="questionForm" action="">
-                    <p id="question10"></p>
+                    <p id="question10">
+                        Considere o seguinte segmento de código na linguagem C: <br>
+                        
+                         <code>
+                             int a=3, b=2, c; <br>
+                             c=a!=b; <br>
+                         </code>
+                        
+                        Assinale a alternativa que apresenta os valores das variáveis término da execução:</p>
                     <input type="radio" id="a" name="a" value="a">
                     <label for="a"></label><br>
                     <input type="radio" id="b" name="a" value="b">
