@@ -67,3 +67,11 @@ section>.title {
     margin: auto;
     margin-bottom: 2%;
 }
+
+/*_NOTA FINAL_*/
+.score {
+    display: flex;
+    flex-direction: column;
+    
+
+}
