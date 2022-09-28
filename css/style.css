@@ -58,9 +58,7 @@ section>.title {
     font-size: 1.1rem;
 }
 
-.questionForm>input {
-    
-}
+.questionForm>input {}
 
 .btn-primary {
     width: 12vw;
@@ -69,9 +67,39 @@ section>.title {
 }
 
 /*_NOTA FINAL_*/
-.score {
+#score {
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
+    align-content: center;
+    padding: 3rem;
+    margin: 2%;
+    background-color: blue;
+    border-radius: 2rem;
+}
 
+#score>p {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    margin: 0 auto;
+    padding: .5rem;
+    border-radius: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+}
+
+#finalScore {
+    font-weight: bold;
+}
+
+#scoreStyle {
+    font-size: 1.5rem;
+}
+
+#score>#emoji {
+    width: min-content;
+    border-radius: 50%;
+    font-size: 1.5rem;
 }

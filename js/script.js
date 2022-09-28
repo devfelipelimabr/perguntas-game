@@ -1,5 +1,8 @@
 /*_CÁLCULO DA NOTA_*/
 function score() {
+    const field = document.getElementById('score')
+    field.style.display = "block"
+
     let sum = 0
 
     const msg = document.getElementById('score')
@@ -58,4 +61,11 @@ function score() {
 
     msg.innerHTML += (`<br><p id="finalScore">Sua nota final foi: <span id="scoreStyle">${sum}</span></p>`)
 
+    if (sum <= 5) {
+        msg.innerHTML += (`<br><p id="emoji">&#128533</p>`)
+    }else if (sum < 8) {
+        msg.innerHTML += (`<br><p id="emoji">&#128528</p>`)
+    }else {
+        msg.innerHTML += (`<br><p id="emoji">&#128513</p>`)
+    }
 }
