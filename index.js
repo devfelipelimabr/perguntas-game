@@ -57,7 +57,7 @@ app.post("/score", (req, res) => {
         emoji
     );
   } else {
-    res.send("!Todas as questões devem ser marcadas.");
+    res.render("incomplet");
   }
 });
 
