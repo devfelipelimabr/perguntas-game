@@ -48,9 +48,10 @@ section>.title {
 
 .question>h2 {
     background-image: linear-gradient(90deg, #002333, #159A9C);
-    padding: .5rem;
+    padding: .5rem 1rem;
     border-radius: 1.5rem;
     color: #FFFFFF;
+    width: fit-content;
 }
 
 .questionForm {
