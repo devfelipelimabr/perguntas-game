@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
+const port = 3000;
 
 // Estou dizendo para o Express usar o EJS como View engine
 app.set("view engine", "ejs");
@@ -52,14 +53,15 @@ app.post("/score", (req, res) => {
     res.send(
       "<div id='score'><p id='finalScore'>Sua nota final foi: <span id='scoreStyle'>" +
         sum +
-        "</span></p></div>" + emoji
+        "</span></p></div>" +
+        emoji
     );
   } else {
     res.send("!Todas as questões devem ser marcadas.");
   }
 });
 
-app.listen(3000, (err) => {
+app.listen(port, (err) => {
   if (err) console.log(err);
-  console.log("App rodando!");
+  console.log("App rodando na porta: " + port);
 });
