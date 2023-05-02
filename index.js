@@ -44,18 +44,16 @@ app.post("/score", (req, res) => {
     let emoji = "";
 
     if (sum <= 5) {
-      emoji = "<br><p id='emoji'>&#128533</p>";
+      emoji = "☹️";
     } else if (sum < 8) {
-      emoji = "<br><p id='emoji'>&#128528</p>";
+      emoji = "😐";
     } else {
-      emoji = "<br><p id='emoji'>&#128513</p>";
+      emoji = "😁";
     }
-    res.send(
-      "<div id='score'><p id='finalScore'>Sua nota final foi: <span id='scoreStyle'>" +
-        sum +
-        "</span></p></div>" +
-        emoji
-    );
+    res.render("score", {
+      sum: sum,
+      emoji: emoji,
+    });
   } else {
     res.render("incomplet");
   }
