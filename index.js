@@ -23,6 +23,7 @@ app.use(express.static("public"));
 //Configurando a biblioteca Body Parser
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
 //Rotas
 app.get("/", (req, res) => {
   res.render("index");
@@ -71,9 +72,14 @@ app.post("/score", (req, res) => {
       score: score,
     });
 
-    res.render("score", {
-      score: score,
-      emoji: emoji,
+    Perguntas.findAll({
+      raw: true,
+    }).then((results) => {
+      res.render("score", {
+        score: score,
+        emoji: emoji,
+        results: results,
+      });
     });
   } else {
     res.render("incomplet");
