@@ -74,6 +74,7 @@ app.post("/score", (req, res) => {
 
     Perguntas.findAll({
       raw: true,
+      order: [["score", "DESC"]],
     }).then((results) => {
       res.render("score", {
         score: score,
