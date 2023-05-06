@@ -87,6 +87,24 @@ app.post("/score", (req, res) => {
   }
 });
 
+app.get("/score/:id", (req, res) => {
+  const id = req.params.id;
+  
+  Perguntas.findOne({
+    raw: true,
+    where: { id: id },
+  }).then((profile) => {
+    if (profile != undefined) {
+      res.render("profile", {
+        profile: profile,
+      });
+    } else {
+      res.render("noUser");
+    }
+  });
+});
+
+//Listagem da porta
 app.listen(port, (err) => {
   if (err) console.log(err);
   console.log("App rodando na porta: " + port);

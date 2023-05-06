@@ -1,0 +1,19 @@
+<%- include ("partials/head.ejs"); %>
+    <body>
+        <%- include ("partials/header.ejs"); %>    
+        <div class="card mb-3" style="max-width: 540px; margin: 5vh auto;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=320&txt_altura=240&extensao=png&fundo_r=0&fundo_g=0&fundo_b=0&texto_r=0.9660638272762299&texto_g=1&texto_b=0.0279541015625&texto=By%20FelipeLima&tamanho_fonte=22" class="img-fluid rounded-start" alt="UserImage">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title"><%= profile.user %></h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated <%= profile.updatedAt %></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>
