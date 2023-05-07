@@ -13,7 +13,7 @@
             <h2>Score geral:</h2>
             <% results.forEach(result =>{ %>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item" style="font-weight: bold;">Usuário: <%= result.user %> </li>
+                    <a href="/score/<%= result.id %>"><li class="list-group-item" style="font-weight: bold;">Usuário: <%= result.user %> </li></a>
                     <li class="list-group-item">Nota: <%= result.score %> </li>
                     <li class="list-group-item">Data: <%= result.createdAt %> </li>
                   </ul>
