@@ -14,8 +14,7 @@
             <% results.forEach(result =>{ %>
                 <ul class="list-group list-group-flush">
                     <a href="/score/<%= result.id %>"><li class="list-group-item" style="font-weight: bold;">Usuário: <%= result.user %> </li></a>
-                    <li class="list-group-item">Nota: <%= result.score %> </li>
-                    <li class="list-group-item">Data: <%= result.createdAt %> </li>
+                    <li class="list-group-item">Nota: <%= result.score %> </li>                    
                   </ul>
                   <br>
           <%  }) %>
